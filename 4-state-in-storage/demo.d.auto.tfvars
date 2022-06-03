@@ -3,3 +3,4 @@ name-env              = "D"
 location              = "centralus"
 vnt-address-space     = ["10.0.4.0/24"]
 snt-web-address-space = ["10.0.4.0/28"]
+snt-dev-address-space = ["10.0.4.32/27"]

@@ -22,3 +22,7 @@ variable "vnt-address-space" {
 variable "snt-web-address-space" {
   type = list(string)
 }
+
+variable "snt-dev-address-space" {
+  type = list(string)
+}
