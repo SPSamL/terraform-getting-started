@@ -1,6 +1,6 @@
-name-app              = "DEMO"
-name-env              = "D"
+name_app              = "DEMO"
+name_env              = "D"
 location              = "centralus"
-vnt-address-space     = ["10.0.4.0/24"]
-snt-web-address-space = ["10.0.4.0/28"]
-snt-dev-address-space = ["10.0.4.32/27"]
+vnt_address_space     = ["10.0.4.0/24"]
+snt_web_address_space = ["10.0.4.0/28"]
+snt_dev_address_space = ["10.0.4.32/27"]

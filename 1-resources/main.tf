@@ -2,7 +2,7 @@
 # Create a Resource Group
 ##################################################
 
-resource "azurerm_resource_group" "demo-rgp" {
+resource "azurerm_resource_group" "rgp_demo" {
   location = "centralus"
   name     = "DEMO-RGP"
 }
@@ -11,9 +11,9 @@ resource "azurerm_resource_group" "demo-rgp" {
 # Creat a VNET in Resource Group
 ##################################################
 
-resource "azurerm_virtual_network" "name" {
+resource "azurerm_virtual_network" "vnt_demo" {
   address_space       = ["10.0.0.0/24"]
   location            = "centralus"
   name                = "DEMO-VNT"
-  resource_group_name = azurerm_resource_group.demo-rgp.name
+  resource_group_name = azurerm_resource_group.rgp_demo.name
 }

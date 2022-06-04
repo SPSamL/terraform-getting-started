@@ -1,13 +1,13 @@
-variable "name-unit" {
+variable "name_unit" {
   type    = string
   default = "SL"
 }
 
-variable "name-app" {
+variable "name_app" {
   type = string
 }
 
-variable "name-env" {
+variable "name_env" {
   type = string
 }
 
@@ -15,14 +15,14 @@ variable "location" {
   type = string
 }
 
-variable "vnt-address-space" {
+variable "vnt_address_space" {
   type = list(string)
 }
 
-variable "snt-web-address-space" {
+variable "snt_web_address_space" {
   type = list(string)
 }
 
-variable "snt-dev-address-space" {
+variable "snt_dev_address_space" {
   type = list(string)
 }

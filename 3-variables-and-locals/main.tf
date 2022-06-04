@@ -1,21 +1,21 @@
 locals {
-  upper-resource-prefix = upper("${var.name-unit}-${var.name-app}-${var.name-env}")
-  lower-resource-prefix = lower("${var.name-unit}${var.name-app}${var.name-env}")
+  upper_resource_prefix = upper("${var.name_unit}-${var.name_app}-${var.name_env}")
+  lower_resource_prefix = lower("${var.name_unit}${var.name_app}${var.name_env}")
 }
 
-resource "azurerm_resource_group" "net-rgp" {
+resource "azurerm_resource_group" "rgp_net" {
   location = var.location
-  name     = upper("${local.upper-resource-prefix}-RGP-NET")
+  name     = upper("${local.upper_resource_prefix}-RGP-NET")
 }
 
-resource "azurerm_resource_group" "cor-rgp" {
+resource "azurerm_resource_group" "rgp_cor" {
   location = var.location
-  name     = upper("${local.upper-resource-prefix}-RGP-COR")
+  name     = upper("${local.upper_resource_prefix}-RGP-COR")
 }
 
-resource "azurerm_virtual_network" "demo-vnt" {
-  address_space       = var.vnt-address-space
+resource "azurerm_virtual_network" "vnt_demo" {
+  address_space       = var.vnt_address_space
   location            = var.location
-  name                = upper("${local.upper-resource-prefix}-VNT")
-  resource_group_name = azurerm_resource_group.net-rgp.name
+  name                = upper("${local.upper_resource_prefix}-VNT")
+  resource_group_name = azurerm_resource_group.rgp_net.name
 }
