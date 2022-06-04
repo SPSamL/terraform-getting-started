@@ -1,4 +1,4 @@
-name-app          = "DEMO"
-name-env          = "D"
+name_app          = "DEMO"
+name_env          = "D"
 location          = "centralus"
-vnt-address-space = ["10.0.4.0/24"]
+vnt_address_space = ["10.0.4.0/24"]

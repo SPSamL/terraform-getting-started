@@ -38,4 +38,4 @@ else {
     terraform destroy
 }
 
-Set-Location -Path "C:\Git\Azure Terraform - Getting Started"
+Set-Location -Path "C:\Git\terraform-getting-started"
