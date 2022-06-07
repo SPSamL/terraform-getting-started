@@ -19,3 +19,12 @@ resource "azurerm_virtual_network" "vnt_demo" {
   name                = upper("${local.upper_resource_prefix}-VNT")
   resource_group_name = azurerm_resource_group.rgp_net.name
 }
+
+resource "azurerm_storage_account" "stg_files" {
+  account_replication_type = "LRS"
+  account_tier             = "Standard"
+  location                 = var.location
+  name                     = lower("${local.lower_resource_prefix}stgfl")
+  resource_group_name      = azurerm_resource_group.rgp_cor.name
+
+}
